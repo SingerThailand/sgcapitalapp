@@ -19,5 +19,15 @@
             Productiuon API Gateway
         </button>
     </div>
+    <script>
+            let myString = ""+window.location.href;
+            let searchTerm = "stg";
+            
+            if (myString.includes(searchTerm)) {
+                document.getElementById("env").innerHTML = "STG API Gateway";
+            } else {
+                document.getElementById("env").innerHTML = "Production API Gateway";
+            }
+        </script>
 </body>
 </html>
