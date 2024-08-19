@@ -15,7 +15,7 @@
     <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">SG Capital API Gateway</h5>
         <p class="mb-3 font-normal text-gray-700">API gateway for restricted use in business purposes only</p>
-        <button class="inline-block rounded border border-blue-600 bg-blue-700 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500">
+        <button id="env" class="inline-block rounded border border-blue-600 bg-blue-700 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500">
             Productiuon API Gateway
         </button>
     </div>
@@ -24,7 +24,6 @@
             let searchTerm = "stg";
             
             if (myString.includes(searchTerm)) {
-                alert(myString);
                 document.getElementById("env").innerHTML = "STG API Gateway";
             } else {
                 document.getElementById("env").innerHTML = "Production API Gateway";
